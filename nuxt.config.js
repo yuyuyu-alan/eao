@@ -39,6 +39,18 @@ export default {
     /*
      ** You can extend webpack config here
      */
+    loaders: {
+      less: {
+        lessOptions: {
+          modifyVars: {
+            "primary-color": "#009cbd",
+            "link-color": "#009cbd",
+            "border-radius-base": "0px"
+          },
+          javascriptEnabled: true
+        }
+      }
+    },
     extend(config, ctx) {},
   },
 };

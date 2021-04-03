@@ -1,16 +1,14 @@
 <template>
   <div class="container">
-    <h1>my_blog</h1> <br>
-    <p>welcome</p>
+       <clock/>
   </div>
 </template>
 
 <script>
-import Logo from '~/components/Logo.vue'
-
+import clock from "../components/clock"
 export default {
   components: {
-    Logo
+    clock
   }
 }
 </script>
