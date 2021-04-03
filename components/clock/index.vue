@@ -27,11 +27,15 @@ export default {
       secondHand: null,
     };
   },
+  created() {
+    
+  },
   mounted() {
     this.hourHand = document.querySelector("[data-hour-hand]");
     this.minuteHand = document.querySelector("[data-minute-hand]");
     this.secondHand = document.querySelector("[data-second-hand]");
-    setInterval(this.setClock, 1000)
+    this.setClock();
+    setInterval(this.setClock, 1000);
   },
   methods: {
     setClock() {
@@ -49,10 +53,6 @@ export default {
     },
   },
 };
-
-
-
-// setClock()
 </script>
 
 <style>
